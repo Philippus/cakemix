@@ -2,7 +2,7 @@ ThisBuild / organization := "nl.wehkamp"
 ThisBuild / publish / skip := true
 
 lazy val commonSettings = Seq(
-  scalaVersion := "2.13.18",
+  scalaVersion := "3.10.0",
   crossScalaVersions += "3.3.8",
   scalacOptions ++= (CrossVersion.partialVersion(scalaVersion.value) match {
     case Some((2, 13)) => Seq("-Xsource:3")
